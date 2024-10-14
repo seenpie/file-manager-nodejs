@@ -1,9 +1,8 @@
-import { AppController } from "./src/AppController.js";
-// import { readline } from "node";
+import { AppController } from "./src/Controllers/AppController.js";
 
-function main() {
+async function main() {
   const appController = new AppController();
-  appController.start();
+  await appController.start();
 }
 
-main();
+await main();
