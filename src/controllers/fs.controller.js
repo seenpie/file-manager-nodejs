@@ -8,7 +8,7 @@ import { createBrotliDecompress, createBrotliCompress } from "zlib";
 const BROTLI_COMPRESS = 1;
 const BROTLI_DECOMPRESS = 0;
 
-export class FSController {
+export class FsController {
   constructor() {
     this._setCurrentDir(this._getOSHomedir());
   }

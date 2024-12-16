@@ -1,4 +1,4 @@
-import { AppController } from "./src/Controllers/AppController.js";
+import { AppController } from "./src/controllers/app.controller.js";
 
 async function main() {
   const appController = new AppController();

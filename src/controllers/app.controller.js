@@ -1,13 +1,13 @@
-import { OutputController } from "./OutputController.js";
-import { FSController } from "./FSController.js";
+import { OutputController } from "./output.controller.js";
+import { FsController } from "./fs.controller.js";
 import { createInterface } from "readline";
 import { textList } from "../models/index.js";
-import { CommandController } from "./CommandController.js";
+import { CommandController } from "./command.controller.js";
 
 export class AppController {
   constructor() {
     this.username = this._getName();
-    this.fsController = new FSController();
+    this.fsController = new FsController();
     this.outputController = new OutputController();
     this.commandController = new CommandController(this.outputController, this.fsController, this.username);
   }

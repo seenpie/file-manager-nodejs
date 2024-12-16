@@ -1,5 +1,5 @@
 import { textList } from "../models/index.js";
-import { formatCPUsToText } from "../utils/formatCPUsToText.js";
+import { formatCPUsToText } from "../utils/format-CPUs-to-text.js";
 
 const argsRegex = /(?:[^\s"]+|"[^"]*")+/g;
 
